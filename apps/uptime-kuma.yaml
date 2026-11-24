@@ -15,3 +15,14 @@ spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
+    automated:
+      enabled: true
+      selfHeal: true
+      prune: true
+    retry:
+      refresh: true
+      limit: 5 
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
