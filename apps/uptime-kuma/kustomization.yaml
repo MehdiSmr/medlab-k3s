@@ -1,0 +1,6 @@
+resources:
+- namespace.yaml
+- uptime-kuma-ingress.yaml  
+- uptime-kuma-pvc.yaml  
+- uptime-kuma-service.yaml  
+- uptime-kuma.yaml
